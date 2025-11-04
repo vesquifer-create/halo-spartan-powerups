@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo: Spartan Power-Ups</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="wrap">
+        <h1>Halo: Spartan Power-Ups</h1>
+        <p class="sub">Selecciona un ítem para cambiar al Spartan y el fondo</p>
+        <p class="mini">A01708849 · Víctor Esquivel</p>
+    </header>
+
+    <main class="wrap">
+        <figure class="stage">
+            <img id="personaje" class="hero" src="assets/char-default.webp" alt="Spartan">
+        </figure>
+
+        <nav class="botones" aria-label="Power-ups">
+            <button class="power" onclick="cambiar(1)">
+                <img src="assets/armadura.png" alt="Armadura" width="64" height="64">
+            </button>
+            <button class="power" onclick="cambiar(2)">
+                <img src="assets/jetpack.png" alt="Jetpack" width="64" height="64">
+            </button>
+            <button class="power" onclick="cambiar(3)">
+                <img src="assets/bubbleshield.png" alt="Bubble Shield" width="64" height="64">
+            </button>
+            <button class="power" onclick="cambiar(4)">
+                <img src="assets/evadir.png" alt="Evadir" width="64" height="64">
+            </button>
+        </nav>
+
+        <!-- Imagen de menú -->
+        <div class="menu-container">
+            <img src="assets/menu.png" alt="Menú de Elección" class="menu" onclick="volverMenu()">
+        </div>
+    </main>
+
+    <footer class="wrap">
+        <p class="mini">TC1004B · Tarea 4</p>
+    </footer>
+</body>
+
+</html>
